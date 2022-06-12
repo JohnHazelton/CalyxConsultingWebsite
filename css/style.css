@@ -1,0 +1,1050 @@
+/* 
+
+colors:
+#5a54ff
+#31343b
+
+*/
+
+html{
+  /*position: relative;*/
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-weight: 700;
+  font-family: "Viga";
+  font-size: 2rem;
+  /*background-color: #f0f2f5;*/
+  background-color: white;
+  color: black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: -4;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 600;
+  color: #31343b;
+  text-align: center;
+}
+
+h2{
+  font-size: 3rem;
+  line-height: 3.8rem;
+  color: #31343b;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+h5{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #31343b;
+}
+
+p{
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: normal;
+  font-size: 1rem;  
+  font-family: "Viga";
+  font-weight: 400;
+}
+
+.purple-text{
+  color: #5a54ff;
+}
+
+.purple-highlight{
+  background-color: #5a54ff;
+  padding: 0 .3rem;
+}
+
+
+/* top menu navigation bar */
+
+
+
+#navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  z-index: 3;
+  transition: .5s ease;
+}
+
+#navbar.scrolled{
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);  
+  background-color: white;
+}
+
+#logo{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2rem;
+  height: 2rem;
+  width: 6rem;
+  background-color: white;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+#calyx-logo-name{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2rem;
+  height: 2rem;
+}
+
+#navbar.scrolled #logo{
+  opacity: 1;
+}
+
+.links { 
+  position: absolute;
+  padding: 0px 0px;
+  margin: 0px 0px;    
+  bottom: 20%;
+  right: 12rem;
+  list-style: none; 
+  display: table;
+  text-align: center;
+  transition: .7s ease-in-out;
+  z-index: -1;    
+}
+
+li { 
+    display: table-cell; 
+    position: relative;     
+}
+
+.page-link{
+  margin: 0; 
+  padding: .625rem .75rem 0rem;
+}
+
+.links a{
+  height: 40px;   
+  display: inline-block;
+  position: relative;
+  transition: .2s ease-in-out;    
+}
+
+#navbar.scrolled .page-link{
+  color: #31343b;
+}
+
+.page-link.scrolled{
+  color: #5a54ff !important;
+}
+
+.links a:before {
+  bottom: 30%;
+  content: "";
+  display: block;
+  height: .15rem;
+  width: 0;
+  left: 0;
+  border-radius: .1rem;
+  position: absolute;
+  /*background: #82db33;*/
+  background-color: gold;
+  /*background-color: gold;*/
+  /*border-bottom: .1rem solid black;*/
+  opacity: 1;
+  z-index: -2; 
+  transition: .4s cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.links a:hover:before{
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.25);
+  width: 95%;
+}
+
+.links a.scrolled:before{
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.25);
+  width: 95%; 
+}
+
+.links a.scrolled{
+  color: #5a54ff;
+}
+
+.contact-button-container{
+  position: absolute;
+  width: 7rem;
+  height: 2.5rem;
+  transition: .5s cubic-bezier(0.23, 0.28, 0.35, 1.85);
+  z-index: 1;
+}
+
+.contact-button{
+  position: absolute;
+  padding: .6rem 1.2rem;
+  text-align: center;
+  transition: .5s cubic-bezier(0.23, 0.28, 0.35, 1.85);
+  z-index: 1;
+}
+
+#contact-btn1{
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  /*border-radius: .2rem;*/
+  border: .12rem solid white;
+}
+
+#contact-btn1:hover{
+  right: 1.6rem;
+  padding: .8rem 1.6rem;
+  color: #31343b;
+  background-color: white;
+  border-radius: .2rem;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#navbar.scrolled #contact-btn1{
+  color: #31343b;
+  border-color: #31343b;
+}
+
+#navbar.scrolled #contact-btn1:hover{
+  color: white;
+  background-color: #31343b;
+}
+
+#calyx-logo-full{
+  position: relative;
+  top: 2rem;
+  left: 4rem;
+  width: 13rem;
+}
+
+#mission-box{
+  position: relative;
+  /*top: 60%;
+  transform: translate(0,-50%);*/
+  margin-top: 20rem;
+  left: 15%;
+  width: 40%;
+  color: #31343b;
+}
+
+#mission-title{
+  width: 100%;
+}
+
+#mission-text{
+  width: 100%;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* decorative cirlces and animated shapes for header */
+
+
+
+#small-circle{
+  position: absolute;
+  top: 33rem;
+  left: 65%;
+  width: 5rem;
+  height: 5rem;
+  /*background-color: #5a54ff;*/
+  border: 2px solid gold;
+  border-radius: 100%;
+  z-index: -4;
+  animation-duration: 3s;
+  animation-name: spin-right;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+
+#big-circle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%,-50%);
+  width: 75rem;
+  height: 75rem;
+  background-color: #5a54ff;
+  background-image: linear-gradient(to bottom left, black, skyblue, dodgerblue, #5a54ff, #5a54ff);
+  border-radius: 100%;
+  z-index: -4;
+}
+
+#ring-circle{
+  position: absolute;
+  bottom: -.5rem;
+  left: -.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #5a54ff;
+  border-radius: 30rem;
+  z-index: 4;
+}
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  from {
+    width: .5rem;
+  }
+
+  to {
+    width: 14rem;
+  }
+}
+
+
+
+/* header button prompting users to scroll down and explore the page */
+
+
+
+#about-btn-container{
+  position: absolute;
+  top: 20rem;
+  right: 10%;
+  width: 9rem;
+  height: 3.5rem;
+  /*height: 3.5rem;*/
+  background-color: white;
+  border-radius: 5rem;
+  /*box-shadow: 0px 8px 20px 0px rgba(16, 66, 97, 0.07);*/
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: .7s cubic-bezier(0.23, 0.58, 0.35, 1.85);
+}
+
+#about-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 1.06rem 3.6rem 1.06rem 2rem;
+  border-radius: 5rem;
+  color: black;
+  transition: .7s ease;
+}
+
+#arrow-circle{
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  opacity: .08;
+  border-radius: 10rem;
+  transition: .2s ease;
+}
+
+#arrow-black{
+  position: absolute;
+  right: 12%;
+  top: 50%;
+  width: 1.2rem;
+  transform: rotate(-90deg) translateX(50%);
+  transition: .5s cubic-bezier(0.23, 0.28, 0.35, 1.45);
+}
+
+#about-btn-container:hover{
+  border-radius: .1rem;
+  right: 9.5%;
+  width: 11rem;
+}
+
+#about-btn-container:hover #about-btn{
+  border-radius: .1rem;
+  left: 0;
+  padding: 1.06rem 4rem 1.06rem 3.5rem; 
+}
+
+#about-btn-container:hover #arrow-black{
+  transform: rotate(0deg) translateY(-50%);
+}
+
+#about-btn-container:hover #arrow-circle{
+  border-radius: .1rem;
+}
+
+
+
+
+/* section describing our consulting model & process */
+
+
+
+
+#model-anchor{
+  position: relative;
+  margin: 6rem 0 0;
+  padding: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+}
+
+#model-container{
+  position: relative;
+  margin-top: 3.5rem;
+  padding: .1rem 0 3rem;
+  width: 100%;
+  background-color: #f0f2f5;
+  z-index: -3;
+}
+
+#model-title{
+  margin: 4rem 0 1rem;
+  padding: 0;
+}
+
+#model-description{
+  margin: 0 auto 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 45%;
+  color: grey;
+}
+
+li{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#model{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.model-card{
+  display: inline-block;
+  height: 20rem;
+  width: 12rem;
+  padding: 2rem 1rem 1rem;
+  margin: 2rem 1rem 0;
+  border-radius: .2rem;
+  background-color: white;
+  box-shadow: 0px 8px 20px 0px rgba(16, 66, 97, 0.2);
+  /*background-color: #f0f2f5;*/
+  transition: .5s cubic-bezier(0.23, 0.58, 0.35, 1.85);
+}
+
+.icon-circle{
+  margin: 0rem auto;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.8rem;
+  background-color: whitesmoke;
+  transition: 1s cubic-bezier(0.23, 0.58, 0.35, 1.55);
+}
+
+.step-text{
+  width: 100%;
+  height: 7rem;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0;
+  line-height: 1.7rem;
+  color: grey;
+}
+
+.step-title{
+  text-align: center;
+  width: 100%;
+  margin: 3.5rem 0;
+  padding: 0;
+  /*color: #31343b;*/
+  color: #5a54ff;
+}
+
+.model-card-highlight{
+  margin: -5rem -2rem;
+  height: 3.4rem;
+  width: 0%;
+  background-color: yellow;
+  border-radius: .2rem;
+  box-shadow: 0px 8px 20px 0px rgba(16, 66, 97, 0.07);
+  transition: .5s cubic-bezier(0.23, 0.58, 0.35, 1.55);
+}
+
+#contact-icon{
+  background-image: url(../images/icons/contact-purple.png);
+}
+
+#connect-icon{
+  background-image: url(../images/icons/connect-purple.png);
+}
+
+#observe-icon{
+  background-image: url(../images/icons/search-purple.png);
+}
+
+#create-icon{
+  background-image: url(../images/icons/create-purple.png);
+}
+
+#present-icon{
+  background-image: url(../images/icons/present-purple.png);
+}
+
+.model-card:hover{
+  height: 19rem;
+}
+
+.model-card:hover .model-card-highlight{
+  width: 16rem;
+}
+
+.model-card:hover .icon-circle{
+  transform: rotate(360deg);
+}
+
+
+
+
+/* section displaying backgrounds & experience for each of our founders and consultants */
+
+
+
+
+#founders-anchor{
+  position: relative;
+  margin: 4rem 0 0;
+  padding: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: #f0f2f5;
+}
+
+#founders-container{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: .1rem 0 4rem;
+  background-color: white;
+}
+
+#founders-title{
+  margin: 4rem auto 1rem;
+  padding: 0;
+  text-align: center;
+}
+
+#founders{
+  width: 100%;
+  padding: 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.founder-card{
+  display: inline-block;
+  vertical-align: text-top;
+  height: 37rem;
+  width: 18rem;
+  padding: 2rem 3rem 0;
+  margin: 2rem 2rem 0;
+  border-radius: .2rem;
+  background-color: white;
+  box-shadow: 0px 8px 20px 0px rgba(16, 66, 97, 0.2);
+  /*background-color: #f0f2f5;*/
+  transition: .5s cubic-bezier(0.23, 0.58, 0.35, 1.85);
+}
+
+.founder-pic{
+  margin: 0rem auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 6rem;
+  background-color: whitesmoke;
+  transition: 1s cubic-bezier(0.23, 0.58, 0.35, 1.55);
+}
+
+#vineet{
+  background-image: url(../images/vineet-pic.jpg);
+}
+
+#john{
+  background-image: url(../images/john-pic.PNG);
+}
+
+#vasi{
+  background-image: url(../images/vasi-pic.jpg);
+}
+
+.founder-name{
+  text-align: center;
+  margin: 2rem 0 0;
+  padding: 0;
+  color: #5a54ff;
+}
+
+.founder-major{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #31343b;
+}
+
+.founder-description{
+  width: 100%;
+  height: 20rem;
+  text-align: justify;
+  margin: 1rem 0 0;
+  padding: 0;
+  line-height: 2rem;
+  color: grey;
+}
+
+
+
+
+/* section on our clients/customers, displaying logos for each */
+
+
+
+
+
+#clients-anchor{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+}
+
+#clients-container{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 4rem auto 2rem;
+  padding: 0;
+}
+
+#clients-title{
+  margin: 0 auto;
+  padding: 0;
+}
+
+#client-logos{
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin: 3rem auto 0;
+  padding: 0;
+  background-color: #31343b;
+  border-radius: .2rem;
+  box-shadow: 0px 8px 20px 0px rgba(16, 66, 97, 0.2);
+}
+
+.client-logo{
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  padding: .5rem 1rem;
+  margin: 0rem .5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18rem;
+  transition: .4s ease;
+}
+
+#vsvs{
+  background-image: url(../images/logos/vsvs-white.png);
+}
+
+#kappa{
+  background-image: url(../images/logos/kappa-white.png);
+}
+
+#vsg{
+  background-image: url(../images/logos/vsg-white.png);
+}
+
+#amigos{
+  background-image: url(../images/logos/amigos-white.png);
+}
+
+
+
+
+/* section telling potential interested customers to contact us, including a button that links to an email */
+
+
+
+
+
+#contact-container{
+  position: relative;
+  text-align: center;
+  margin: -4.5rem auto 0;
+  padding: 3.8rem 4rem 1.5rem;
+  width: 50%;
+  background-color: #5a54ff;
+  border-radius: .2rem;
+  box-shadow: 0px 8px 20px 0px rgba(16, 66, 97, 0.2);
+  /*box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);*/
+  z-index: -1;
+}
+
+#contact-description{
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 2rem; 
+  line-height: 2.2rem;
+  color: white;
+}
+
+#contact-btn2{
+  margin: 0 auto 2rem;
+  transform: translateX(-50%);
+  color: white;
+  background-color: #31343b;
+  border-radius: .2rem;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  border: .12rem solid #31343b;
+}
+
+#contact-btn2:hover{
+  padding: .8rem 1.6rem;
+}
+
+
+
+
+/* footer section with all links and copyright at the bottom */
+
+
+
+
+#footer-container{
+  position: relative;
+  margin: 8rem 0 0;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #31343b;
+}
+
+#footer{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  height: 10rem;
+  margin: 0 1rem;
+  padding: 2rem 2rem 1rem;
+  /*border-right: .1rem solid white;*/
+}
+
+.footer-title{
+  margin: 0 0 .5rem;
+  padding: 0;
+  color: white;
+}
+
+#newsletter-form{
+  display: inline-block;
+  margin: 2rem 0 0;
+  padding: 0;
+  font-size: .9rem;
+  color: white;
+}
+
+#newsletter-input{
+  color: whitesmoke;
+  background-color: #51545c;
+  padding: .5rem 0 .5rem .5rem;
+  border: 0;
+  border-radius: .2rem;
+  font-family: "Viga";
+  font-size: .8rem;
+}
+
+#newsletter-button{
+  margin: 0 0 0 .2rem;
+  padding: .45rem .5rem;
+  background-color: white;
+  border: 0;
+  border-radius: .2rem;
+  font-family: "viga";
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#newsletter-text{
+  width: 100%;
+  height: 5rem;
+  margin: .5rem 0 0;
+  padding: 0;
+  font-size: .8rem;
+  line-height: 1.7rem;
+  color: whitesmoke;
+}
+
+.divider{
+  height: 75%;
+  width: .1rem;
+  margin: 2.8rem 0 0;
+  padding: 0;
+  background-color: white;
+}
+
+.footer-divider-column{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  height: 10rem;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.links-list{
+  margin: 0;
+  padding: 0;
+}
+
+.links-list li{
+  display: block;
+  margin: 0 0 -.7rem;
+  padding: 0;
+}
+
+.links-list p{
+  display: inline;
+}
+
+.social-icon{
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  /*color: #99a9b2;*/
+  color: whitesmoke;
+  background-color: transparent;
+  transition: .2s ease;
+}
+
+.social-icon-text{
+  /*color: #99a9b2;*/
+  color: whitesmoke;
+  margin-left: .5rem;
+  font-size: .9rem;
+}
+
+.social-icon:hover{
+  color: yellow;
+  font-size: 1.4rem;
+}
+
+.social-icon:hover p{
+  color: yellow;
+}
+
+#footer-site-links li{
+  margin: 0 0 -.8rem;
+}
+
+#footer-site-links a{
+  width: 100%;
+  font-size: .9rem;
+  /*color: #99a9b2;*/
+  color: whitesmoke;
+}
+
+#footer-site-links a:hover{
+  color: yellow;
+}
+
+#copyright-container{
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  /*background-color: #28303e;*/
+  background-color: #5a54ff;
+}
+
+#copyright{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2rem;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: .9rem;
+}
+
+#creator{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: .9rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  #mission-box{
+    left: 10%;
+  }   
+}
+
+@media only screen and (max-width: 900px) {
+  #big-circle{
+    width: 65rem;
+    height: 65rem;
+  } 
+  #contact-btn1{
+    display: none;
+  }
+  .links { 
+    right: 2rem;    
+  }
+  #about-btn-container{
+    top: 15rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about-btn-container{
+    top: 12rem;
+  }
+  #big-circle{
+    width: 55rem;
+    height: 55rem;
+  } 
+  #calyx-logo-full{
+    left: 2rem;
+  }
+  #mission-box{
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #big-circle{
+    width: 52rem;
+    height: 52rem;
+  } 
+  #mission-box{
+    width: 50%;
+    left: 5%;
+  }
+  #calyx-logo-full{
+    left: -4rem;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  #calyx-logo-name{
+    left: -1rem;
+  }
+  .page-link{
+  font-size: .9rem;
+  margin: 0; 
+  padding: .625rem .5rem 0rem;
+  color: #31343b;
+  }
+  .divider{
+    display: none;    
+  }
+  #copyright{
+    font-size: .8rem;
+    left: 1rem;
+  }
+  #creator{
+    font-size: .8rem; 
+    right: 1rem;
+  }
+  #client-logos{
+  width: 80%;
+  }
+  #big-circle{
+    display: none;  
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #big-circle{
+    display: none;
+  }
+  #calyx-logo-full{
+    display: none;
+  }
+  #calyx-logo-name{
+    display: none;
+  }
+  .page-link{
+    font-size: .9rem;
+    margin: 0; 
+    padding: .625rem .5rem 0rem;
+  }
+  #copyright{
+    font-size: .8rem;
+    left: 1rem;
+  }
+  #creator{
+    font-size: .8rem; 
+    right: 1rem;
+  }
+}
+
+}

@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css?family=Viga:400" rel="stylesheet">
+    <title>Calyx Consulting</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="https://s3.us-east-2.amazonaws.com/calyxconsultancy.com/css/style.css">
+    <!--<link rel="icon" href="https://s3.us-east-2.amazonaws.com/calyxconsultancy.com/images/logos/calyx-logo-icon-purple.png">-->
+      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+    <script src="https://s3.us-east-2.amazonaws.com/calyxconsultancy.com/js/jquery-3.3.1.js"></script>
+    <!--<script src="js/jquery.localScroll-2.0.0/jquery.localScroll.js" type="text/javascript"></script> 
+    <script src="js/jquery.scrollTo-2.1.2/jquery.scrollTo.js" type="text/javascript"></script>--> 
+      
+      
+<!--$('html, body').animate({
+              scrollTop: ($('#element').offset().top)
+            },500);-->
+      
+<!--var mdlPos = document.getElementById("#model-anchor").scrollTop;
+            var cnsPos = document.getElementById("#founders-anchor").scrollTop;-->
+<!--600,1400,2250-->  
+    <script type="text/javascript">
+      $(function () {
+            $("#abt").click(function() {
+              $([document.documentElement, document.body]).animate({
+                scrollTop: $("#calyx-logo-full").offset().top
+              }, 1000);
+            });
+          
+            $("#mdl").click(function() {
+              $([document.documentElement, document.body]).animate({
+                scrollTop: $("#model-anchor").offset().top
+              }, 1000);
+            });
+          
+            $("#cns").click(function() {
+              $([document.documentElement, document.body]).animate({
+                scrollTop: $("#founders-anchor").offset().top
+              }, 1000);
+            });
+          
+            $("#clt").click(function() {
+              $([document.documentElement, document.body]).animate({
+                scrollTop: $("#clients-anchor").offset().top
+              }, 1000);
+            });
+          
+            $("#about-btn-container").click(function() {
+              $([document.documentElement, document.body]).animate({
+                scrollTop: $("#model-anchor").offset().top
+              }, 1000);
+            });
+          
+            $(document).scroll(function () {
+              $(".header").toggleClass('scrolled', $(this).scrollTop() > 50);
+            });  
+          
+            $(document).scroll(function () {
+              var mdlPos = $("#model-anchor").offset().top;
+              $("#abt").toggleClass('scrolled', $(this).scrollTop() > 0 && $(this).scrollTop() < mdlPos-150);
+            }); 
+          
+            $(document).scroll(function () { 
+              var mdlPos = $("#model-anchor").offset().top;
+              var cnsPos = $("#founders-anchor").offset().top;
+              $("#mdl").toggleClass('scrolled', $(this).scrollTop() > mdlPos-150 && $(this).scrollTop() < cnsPos-150);
+            }); 
+          
+            $(document).scroll(function () {
+              var cnsPos = $("#founders-anchor").offset().top;
+              var cltPos = $("#clients-anchor").offset().top;
+              $("#cns").toggleClass('scrolled', $(this).scrollTop() > cnsPos-150 && $(this).scrollTop() < cltPos-150);
+            }); 
+          
+            $(document).scroll(function () {
+              var cltPos = $("#clients-anchor").offset().top;
+              $("#clt").toggleClass('scrolled', $(this).scrollTop() > cltPos-150);
+            }); 
+          
+            $(document).ready(function () {
+              scroll();//run when page first loads
+            });
+          
+            $(window).resize(function () {
+              scroll();//run on every window resize
+            });
+          
+            $("li").hover(function() {
+                $("li").toggleClass("hover");
+            });
+      });
+      $.localScroll({duration:900});
+    </script>
+  </head>
+    
+    <body>
+      <div class="header" id="navbar">
+        <div id="logo">
+          <img id="calyx-logo-name" src="https://s3.us-east-2.amazonaws.com/calyxconsultancy.com/images/logos/calyx-logo-name-purple.png">
+        </div>
+        <ul class="links">
+          <li><span></span><a class="page-link" id="abt" href="#">About</a></li>
+          <li><span></span><a class="page-link" id="mdl" href="#">Our Model</a></li>
+          <li><span></span><a class="page-link" id="cns" href="#">Consultants</a></li>
+          <li><span></span><a class="page-link" id="clt" href="#">Clients</a></li> 
+        </ul>
+        
+        <a href="mailto: john.c.hazelton@vanderbilt.edu" class="header contact-button" id="contact-btn1">Contact Us</a>
+      </div>
+        
+      <img id="calyx-logo-full" src="https://s3.us-east-2.amazonaws.com/calyxconsultancy.com/images/logos/calyx-logo-grey-purple.png">    
+      <div id="title-box">
+      </div>
+      <div id="mission-box">
+        <!--<h1 id="title">Our Mission</h1>-->
+        <!--<h2 id="mission-title">We Pride Ourselves on Collaboration and Creation.</h2>-->
+        <h2 id="mission-title">Join the <span class="purple-text">calyx</span> movement to promote diversity in your organization.</h2>
+        <p id="mission-text">Our mission at Calyx is to work with organizational leaders to pioneer new initiatives, increase board diversity, and expand your organizational network.</p>  
+      </div> 
+        
+      <div id="small-circle">
+        <div id="ring-circle"></div>
+      </div>
+      <div id="big-circle"></div>
+      <div id="small-circle"></div>
+        
+      <div class="button-container" id="about-btn-container">
+        <a href="#model-anchor" class="button" id="about-btn">Explore</a>
+        <span id="arrow-circle"></span>
+        <img id="arrow-black" src="images/icons/arrow-black.png">
+      </div>
+
+        
+        
+        
+        
+        
+      <div id="model-anchor"></div>
+      <div id="model-container">
+        <h1 id="model-title">How We <span class="purple-text">Work</span></h1> 
+        <p id="model-description">We leverage Design Thinking as a methodology for creative problem solving that we have adopted and woven into our own process at Calyx.</p>
+        <ul id="model">
+          <li>
+            <div class="model-card">
+              <div class="icon-circle" id="contact-icon"></div>
+              <p class="step-text">Reach out to us and we'll get back to you with a consultant team and an approximate timeline</p> 
+              <h3 class="step-title">Contact</h3> 
+              <div class="model-card-highlight"></div>
+            </div>
+          </li>
+          <li>
+            <div class="model-card">
+              <div class="icon-circle" id="create-icon"></div>
+              <p class="step-text">Review a slide deck from our team, outlining how we can help prioritize the fundamentals of diversity, equit, and inclusion</p> 
+              <h3 class="step-title">Learn</h3> 
+              <div class="model-card-highlight"></div>
+            </div>
+          </li>
+          <li>
+            <div class="model-card">
+              <div class="icon-circle" id="observe-icon"></div>
+              <p class="step-text">We will observe your organization's meetings, board selection process, and events</p> 
+              <h3 class="step-title">Observe</h3> 
+              <div class="model-card-highlight"></div>
+            </div>
+          </li>
+          <li>
+            <div class="model-card">
+              <div class="icon-circle" id="connect-icon"></div>
+              <p class="step-text">Our consultants will lead a discussion with your board about implementing strategies to integrate diversity into leadership</p> 
+              <h3 class="step-title">Discuss</h3> 
+              <div class="model-card-highlight"></div>
+            </div>
+          </li>
+          <li>
+            <div class="model-card">
+              <div class="icon-circle" id="present-icon"></div>
+              <p class="step-text">A final presentation will be delivered, outlining our specific strategies and solutions that integrating your organization's input</p> 
+              <h3 class="step-title">Present</h3> 
+              <div class="model-card-highlight"></div>
+            </div>
+          </li> 
+          <li>
+            <div class="model-card">
+              <div class="icon-circle" id="connect-icon"></div>
+              <p class="step-text">We will connect you with different multi-cultural and diverse organizations on campus to expand your network</p> 
+              <h3 class="step-title">Connect</h3> 
+              <div class="model-card-highlight"></div>
+            </div>
+          </li>
+        </ul>
+        <div id="founders-anchor"></div>
+      </div>
+        
+        
+        
+        
+        
+        
+        
+      
+      <div id="founders-container">
+        <h2 id="founders-title">Meet Our <span class="purple-text">Team</span></h2>
+        <ul id="founders">
+          <li>
+            <div class="founder-card">
+              <div class="founder-pic" id="vineet"></div>
+              <h3 class="founder-name">Vineet Desai</h3>
+              <h4 class="founder-major">HOD &amp; Biology</h4>
+              <p class="founder-description">Vineet is a rising senior at Vanderbilt, double-majoring in HOD and Biology, with a passion for medicine. On campus he is involved in Tour Guides, Vanderbilt Medical Innovation Lab, Vanderbilt Student Volunteers for Science, and is a Resident Adviser for first-years. He looks to leverage these experiences in a future career as a physician.</p>  
+            </div>
+          </li>
+          <li>
+            <div class="founder-card">
+              <div class="founder-pic" id="john"></div>
+              <h3 class="founder-name">John Hazelton</h3>
+              <h4 class="founder-major">HOD &amp; Economics</h4>
+              <p class="founder-description">John is a rising senior at Vanderbilt, double-majoring in Economics and HOD, with an interest in marketing analytics and consulting. John serves on the Vanderbilt Honor Council and tutors at Napier Elementary. Outside of the classroom, John loves tinkering and exploring new coding languages, from which he built the website you are currently viewing.</p>
+            </div>
+          </li>
+          <li>
+            <div class="founder-card">
+              <div class="founder-pic" id="vasi"></div>
+              <h3 class="founder-name">Vasi Argeroplos</h3>
+              <h4 class="founder-major">Computer Science &amp; Economics</h4>
+              <p class="founder-description">Vasi is a rising junior at Vanderbilt, double-majoring in Computer Science and Economics. She is involved in Alpha Kappa Psi business fraternity and Students Consulting for Nonprofits. She hopes to further merge her business knowledge with technical expertise in future roles.</p>
+            </div>
+          </li>
+        </ul>
+        <div id="clients-anchor"></div>
+      </div>
+     
+        
+        
+        
+        
+      <div id="clients-container">
+        <h2 id="clients-title">Trusted By These <span class="purple-text">Organizations</span></h2>
+        <ul id="client-logos">
+          <li><a class="client-logo" id="vsvs" href="https://studentorg.vanderbilt.edu/vsvs/" target="_blank"></a></li>
+          <li><a class="client-logo" id="kappa" href="https://vanderbilt.kappaalphatheta.org/" target="_blank"></a></li>
+          <li><a class="client-logo" id="vsg" href="https://studentorg.vanderbilt.edu/vsg/" target="_blank"></a></li>
+          <li><a class="client-logo" id="amigos" href="https://anchorlink.vanderbilt.edu/organization/AMIGOS" target="_blank"></a></li>
+        </ul> 
+      </div>
+        
+        
+        
+        
+      <div id="contact-container">
+        <p id="contact-description">If you think we'd be a good fit to help integrate diversity in your organization's leadership, click here to contact us for assistance.  We are also looking for passionate and motivated consultants to join our team!</p>
+        <a href="mailto: john.c.hazelton@vanderbilt.edu" class="contact-button" id="contact-btn2">Contact Us</a>
+      </div>
+        
+        
+        
+        
+        
+      <div id="footer-container">
+        <ul id="footer">
+          <li>
+            <div class="footer-column">
+              <h5 class="footer-title">Sign Up for Our <span class="purple-highlight">Newsletter</span></h5>
+              <form id="newsletter-form">
+                <input id="newsletter-input" type="text" name="email-address" value="Email Address">
+                <input id="newsletter-button" type="submit" value="Submit">
+              </form>
+              <span id="newsletter-underline"></span>
+              <p id="newsletter-text">Receive news, projects, and opportunities</p>
+            </div>
+          </li>
+          <li>
+            <div class="footer-divider-column">
+              <div class="divider"></div>
+            </div>
+          </li>
+          <li>
+            <div class="footer-column">
+              <h5 class="footer-title">Get in <span class="purple-highlight">Touch</span></h5>
+              <ul class="links-list" id="email-links">
+                <li><a class="social-icon" href="mailto: john.c.hazelton@vanderbilt.edu"><i class="fas fa-envelope"></i><p class="social-icon-text">john.c.hazelton@vanderbilt.edu</p></a></li> 
+                <li><a class="social-icon" href="mailto: vineet.desai@vanderbilt.edu"><i class="fas fa-envelope"></i><p class="social-icon-text">vineet.desai@vanderbilt.edu</p></a></li>
+                <li><a class="social-icon" href="mailto: vasiliki.c.argeroplos@vanderbilt.edu"><i class="fas fa-envelope"></i><p class="social-icon-text">vasiliki.c.argeroplos@vanderbilt.edu</p></a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="footer-divider-column">
+              <div class="divider"></div>
+            </div>
+          </li>
+          <li>
+            <div class="footer-column">
+              <h5 class="footer-title">Follow <span class="purple-highlight">Us</span></h5>
+              <ul class="links-list" id="social-links">
+                <li><a class="social-icon" href="#"><i class="fab fa-facebook-f"></i><p class="social-icon-text">facebook</p></a></li>  
+                <li><a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i><p class="social-icon-text">linkedin</p></a></li>
+                <li><a class="social-icon" href="#"><i class="fab fa-github"></i><p class="social-icon-text">instagram</p></a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="footer-divider-column">
+              <div class="divider"></div>
+            </div>
+          </li>
+          <li>
+            <div class="footer-column">
+              <h5 class="footer-title">Site <span class="purple-highlight">Links</span></h5>
+              <ul class="links-list" id="footer-site-links">
+                <li><a class="bottom-link" href="#">About</a><br></li>
+                <li><a class="bottom-link" href="#model-anchor">Our Model</a><br></li>
+                <li><a class="bottom-link" href="#founders-anchor">Consultants</a></li>
+                <li><a class="bottom-link" href="#clients-anchor">Clients</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+        
+      <div id="copyright-container">
+        <p id="copyright">© 2019 Calyx Consulting. All rights reserved.</p>  
+        <p id="creator">Created by John Hazelton</p>
+      </div>
+
+    </body>
+    
+    
+    
+    
+    
+    
+</html>
