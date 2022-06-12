@@ -7,5 +7,5 @@
 </p>
 
 <p align="center">
-  A sample website template I created for a mock consulting company. 
+  A sample website template I created for a mock consulting company using HTML, CSS, and jQuery.
 </p>
